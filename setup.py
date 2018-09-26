@@ -6,7 +6,8 @@ with open('README.md') as file:
 setup(
     name='thread_processor',
     version='0.1',
-    description=long_description,
+    description="Execute function for each argument through a fixed number of threads",
+    long_description=long_description,
     url='https://github.com/krishnabhupatiraju/thread_processor',
     author='Krishna Bhupatiraju',
     author_email='krishnavarma@gmail.com',
