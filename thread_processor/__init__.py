@@ -79,7 +79,7 @@ class ThreadProcessor(object):
 
     def _create_thread(self, thread_name):
         if len(self.thread_func_args_list) > 0:
-            thread_args = self.thread_func_args_list.popleft()
+            thread_args = self.thread_func_args_list.pop()
             t = threading.Thread(
                 name=thread_name,
                 target=self.thread_func,
